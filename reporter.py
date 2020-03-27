@@ -36,7 +36,7 @@ def get_params_per_kind(data, kind="task_input"):
 
 def _read_metric_file(path):
     with open(path, "r") as data:
-        return " ".join([l.split(" ")[1] for l in data.readlines()])
+        return " ".join(data.readlines())
 
 
 def extract_metrics(root):
