@@ -112,7 +112,7 @@ default_args = {
     # "retry_delay": timedelta(minutes=5),
 }
 
-with DAG(dag_id="predict_wine_quality_dag", default_args=default_args) as dag:
+with DAG(dag_id="predict_wine_quality_dag", default_args=default_args, schedule_interval="0 */6 * * *") as dag:
     alpha = 0.2
     l1_ratio = 0.3
 
