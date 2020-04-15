@@ -6,7 +6,8 @@ setup(
     version="1.0",
     packages=find_packages(),
     install_requires=[
-        "wheel" "sklearn",
+        "wheel",
+        "sklearn",
         "matplotlib",
         "pandas<1.0.0,>=0.17.1",
         "nbformat",
